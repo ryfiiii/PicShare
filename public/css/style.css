@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.welcome {
+    height: 100vh;
+    background: url("../images/space.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+/* default */
+html, body {
+    background-color: #fff;
+    color: #fff;
+    font-weight: 200;
+    height: 100vh;
+    margin: 0;
+}
+
+.full-height {
+    height: 100vh;
+}
+
+.flex-center {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.position-ref {
+    position: relative;
+}
+
+.top-right {
+    position: absolute;
+    right: 10px;
+    top: 18px;
+}
+
+.content {
+    text-align: center;
+}
+
+.title {
+    font-size: 84px;
+    font-family: 'Noto Serif', serif;
+}
+
+.links > a {
+    color: #fff;
+    padding: 0 25px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#titlelink {
+    color: #fff;
+    padding: 0 25px;
+    font-size: 84px;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    text-decoration: none;
+
+}
+
+.m-b-md {
+    margin-bottom: 30px;
+}

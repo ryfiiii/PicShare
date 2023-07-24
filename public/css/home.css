@@ -1,0 +1,51 @@
+
+.bg-sky {
+    background: url("../images/sky.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 180px; 
+    object-fit: cover;
+  }
+
+.card-body {
+    height: 120px;
+    position: relative;
+}
+
+.card .card-created {
+    font-size: 0.7rem;
+    position: absolute;
+    right: 5px;
+    bottom: -15px;
+}
+
+.card .card-created-name {
+    font-size: 0.7rem;
+    position: absolute;
+    right: 5px;
+    bottom: 3px;
+}
+
+.card {
+    box-shadow: 0 9px 22px rgba(0, 0, 0, 0.5);
+}
+
+a {
+    text-decoration: none;
+}
+
+.card .tags {
+    position: absolute;
+    left: 15px;
+    bottom: 30px;
+    font-size: 0.9rem;
+}
+
+.errorMessage {
+    transform: translateY(20px);
+}
