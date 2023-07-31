@@ -49,3 +49,14 @@ a {
 .errorMessage {
     transform: translateY(20px);
 }
+
+/* icon */
+
+.icon {
+    font-size: 1.8rem;
+}
+
+
+#delete .card {
+    height: 500px;
+}

@@ -3,10 +3,18 @@
 @section('content')
 <div class="container-xl">
     <div class="row g-5 d-flex justify-content-between">
-        @if (isset($uploadSuccess))
-            {{ $uploadSccess }}
-        @endif
         <div class="col-md-4">
+        @if(session("alert"))
+            @if (session("alert.status") === "success")
+                <div class="alert alert-success text-center">
+                    <p>{{ session("alert.message") }}</p>
+                </div>
+            @elseif(session("alert.status") === "danger")
+                <div class="alert alert-danger text-center">
+                    <p>{{ session("alert.message") }}</p>
+                </div>
+            @endif
+        @endif
             <form action="/search" method="GET" class="card py-4 px-3">
                 <div class="d-flex justify-content-center">
                     <input type="text" class="form-control me-1" placeholder="#タグを入力" id="search" name="tags">
