@@ -6,8 +6,8 @@
 
         <div class="col-md-12">
             <div class="row d-flex justify-content-center">
-                <div class="col-5 col-md-5">
-                    <div class="card bg-light">
+                <div class="col-10 col-md-6">
+                    <div class="card bg-light pb-3 pb-md-0">
                         <div class="card-body">
                             <form action="/deletee/{{ $image['id'] }}" method="post">
                                 @csrf
