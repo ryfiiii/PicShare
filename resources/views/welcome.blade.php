@@ -10,6 +10,7 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
 
         <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+        <link rel="icon" type="image/png" href="{{ asset('images/favicon.ico') }}">
     </head>
     <body>
         <div class="container-fluid">
