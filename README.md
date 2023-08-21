@@ -4,12 +4,22 @@
 
 AWSのlightsailを使用して、デプロイしている。
 
-Controller -> App/Http/Controllers/HomeController.php メインコントローラー。できるだけ見やすいを意識
+## 機能説明
 
-Validate ->  App/Http/Reqests 投稿された値のバリデートを行うクラスをまとめている
+[ウェルカム画面](http://ryfiii.ddo.jp/)にアクセス後、Registerから登録する。
 
-Models -> DBとのリレーション、DBとのやり取りを行うメソッドなどをまとめている
+ホーム画面では、自分や他の人の投稿の閲覧ができるほか、文章・画像・タグをつけて新規投稿をすることもできる。
 
-View -> resources/views Bladeファイルをまとめている。CSS・JSはpublicの中にある
+自分の名前→投稿履歴から自分の過去の投稿を編集、削除することができる。
 
-Storage -> 投稿された写真をまとめている。publicとリンクしている
+## ソースコード解説
+
+- Controller -> App/Http/Controllers/HomeController.php メインコントローラー。できるだけ見やすいを意識
+
+- Validate ->  App/Http/Reqests 投稿された値のバリデートを行うクラスをまとめている
+
+- Models -> DBとのリレーション、DBとのやり取りを行うメソッドなどをまとめている
+
+- View -> resources/views Bladeファイルをまとめている。CSS・JSはpublicの中にある
+
+- Storage -> 投稿された写真をまとめている。publicとリンクしている
