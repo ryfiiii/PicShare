@@ -10,6 +10,7 @@ use App\Models\Image;
 use App\Models\Tag;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Log;
 use Exception;
 
 class HomeController extends Controller
@@ -43,12 +44,12 @@ class HomeController extends Controller
         $user_id = Auth::User()->id;
         $content = $request->content;
 
-        //ファイルをpublicのuploadsに保存した後、保存後のPathを取得
+        //ファイルをpublicのuploadsに保存した後、保存後のPathを$pathに格納
         $path = $request->file("image")->store("uploads", "public");
 
         DB::beginTransaction();
         try {
-            //Image情報をImage情報を保存
+            //Image情報をImageテーブルに保存
             $image = new Image();
             $imageAdd = $image->imageAdd($user_id, $content, $path);
 
@@ -62,6 +63,7 @@ class HomeController extends Controller
         }catch(Exception $e){
 
             DB::rollback();
+            Log::error("エラー: ".$e->getMessage());
             return $this->redirectWithMessage("home", "danger", "エラー： {$e->getMessage()}");
         }
     }
@@ -133,6 +135,7 @@ class HomeController extends Controller
 
         }catch(Exception $e){
             DB::rollback();
+            Log::error("エラー: ".$e->getMessage());
             return $this->redirectWithMessage("history", "danger", "エラー： {$e->getMessage()}");
         }
     }
@@ -167,6 +170,7 @@ class HomeController extends Controller
         }catch(Exception $e){
 
             DB::rollBack();
+            Log::error("エラー: ".$e->getMessage());
             return $this->redirectWithMessage("history", "danger", "エラー： {$e->getMessage()}");
         }
     }
