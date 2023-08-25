@@ -7,7 +7,7 @@
             <div class="row d-flex justify-content-center">
                 <div class="col-10 col-md-6" id="delete">
                     <div class="card">
-                        <form action="/editt/{{ $image->id }}" method="POST">
+                        <form action="/executeEdit/{{ $image->id }}" method="POST">
                             @csrf                        
                             <a href={{ asset("storage/{$image['src']}") }} data-lightbox=" ">
                                 <img src={{ asset("storage/{$image['src']}") }} class="card-img-top">

@@ -26,6 +26,6 @@ Route::post("/post", [HomeController::class, "post"]);
 Route::get("/search", [HomeController::class, "search"]);
 Route::get("/history", [HomeController::class, "history"])->name("history");
 Route::get("/edit/{id}", [HomeController::class, "edit"]);
-Route::post("/editt/{id}", [HomeController::class, "editt"]);
+Route::post("/executeEdit/{id}", [HomeController::class, "executeEdit"]);
 Route::get("/delete/{id}", [HomeController::class, "delete"]);
-Route::post("/deletee/{id}", [HomeController::class, "deletee"]);
+Route::post("/executeDelete/{id}", [HomeController::class, "executeDelete"]);

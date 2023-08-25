@@ -9,7 +9,7 @@
                 <div class="col-10 col-md-6">
                     <div class="card bg-light pb-3 pb-md-0">
                         <div class="card-body">
-                            <form action="/deletee/{{ $image['id'] }}" method="post">
+                            <form action="/executeDelete/{{ $image['id'] }}" method="post">
                                 @csrf
                                 <p class="card-text text-center text-bold fs-5">本当に削除してもよろしいですか?</p>
                                 <div class="d-flex justify-content-center">

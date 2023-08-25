@@ -114,7 +114,7 @@ class HomeController extends Controller
     /**
      * Edit実行
      */
-    public function editt(EditValidate $request){
+    public function executeEdit(EditValidate $request){
         $user_id = Auth::user()->id;
         $img_id = $request->id;
         $content = $request->content;
@@ -152,7 +152,7 @@ class HomeController extends Controller
     /**
      * 削除を実行
      */
-    public function deletee(Request $request){
+    public function executeDelete(Request $request){
         $user_id = Auth::user()->id;
         $img_id = $request->id;
 
