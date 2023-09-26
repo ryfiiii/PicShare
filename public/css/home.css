@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@200;300;400;600;800&display=swap');
+
+* {
+    font-family: 'Noto Sans JP', sans-serif;
+}
 
 .bg-sky {
     background: url("../images/sky.jpg");
