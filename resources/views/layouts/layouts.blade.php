@@ -62,6 +62,9 @@
                                 </li>
                             @endif
                         @else
+                            @if(Auth::user()->avatar)
+                                <img src="{{asset('storage/avatar/'.Auth::user()->avatar)}}" width="40px" height="40px" style="object-fit: cover; border-radius: 50%;">
+                            @endif
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }}
