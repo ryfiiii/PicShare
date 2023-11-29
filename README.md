@@ -16,14 +16,3 @@ AWSのlightsailを使用して、デプロイしている。
 ![編集画面画像](./public/images/readme2.jpg)
 
 
-## ソースコード解説
-
-- Controller -> App/Http/Controllers/HomeController.php メインコントローラー。できるだけ見やすいを意識
-
-- Validate ->  App/Http/Reqests 投稿された値のバリデートを行うクラスをまとめている
-
-- Models -> DBとのリレーション、DBとのやり取りを行うメソッドなどをまとめている
-
-- View -> resources/views Bladeファイルをまとめている。CSS・JSはpublicの中にある
-
-- Storage -> 投稿された写真をまとめている。publicとリンクしている
